@@ -1,0 +1,66 @@
+.schedule {
+  &__title {
+    font-size: 1.25em;
+    padding: 1rem 0;
+  }
+
+  &__card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      background: $colorSecondary;
+      color: $textAlternate;
+      padding: 0.25rem 0.5rem;
+      border-radius: 3px;
+      margin-bottom: 0.5rem;
+      width: 49%;
+
+      @include breakpoint-medium-up {
+        flex-direction: row;
+        padding: 1rem 0.5rem;
+        width: 32.5%;
+      }
+
+      &__time {
+        flex: 1 0 auto;
+        text-align: center;
+      }
+
+      &__place {
+        flex: 1 0 auto;
+        text-align: center;
+      }
+
+      &.disabled {
+        background-color: #E5E7E9;
+        color: #A6ACAF;
+      }
+
+      &.highlighted {
+        background-color: $colorPrimary;
+        color: $textAlternate;
+      }
+
+      &.notify {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        border: 2px solid grey;
+        color: $textPrimary;
+        
+        @include breakpoint-small-down {
+          min-height: 4em;
+        }
+
+        > div {
+          padding: 0 0.25rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@import 'main/app-title';
+@import 'main/banner';
+@import 'main/slot';
+@import 'main/week-view';
+@import 'main/schedule';
+
+main {
+  min-height: calc(100vh - 6rem);
+  
+  .content-grid {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+  }
+}

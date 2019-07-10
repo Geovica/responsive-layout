@@ -1,0 +1,62 @@
+.week-view {
+  display: none;
+
+  @include breakpoint-medium-up {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .day {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .desc {
+      flex: 1 0 auto;
+      font-size: 0.75em;
+    }
+
+    .date-circle {
+      width: 2.5em;
+      height: 2.5em;
+      border-radius: 50%;
+      font-weight: bold;
+      line-height: 2.375em;
+      text-align: center;
+
+      &.colored {
+        background-color: $colorPrimary;
+        color: $textAlternate;
+        line-height: 2.375em;
+        border: 1px solid $colorPrimary;
+      }
+
+      &.bordered {
+        line-height: 2.25em;
+        background-color: none;
+        color: $colorPrimary;
+        border: 2px solid $colorPrimary;
+      }
+
+      &.disabled {
+        line-height: 2.25em;
+        background-color: #E5E7E9;
+        color: #A6ACAF;
+        border: 2px solid #E5E7E9;
+      }
+
+      &.highlighted {
+        line-height: 2.25em;
+        background-color: #F9EBEA;
+        color: #E6B0AA;
+        border: 2px solid #F9EBEA;
+      }
+    }
+
+    .v-divider {
+      flex: 1;
+      border-left: 1px dotted $colorPrimary;
+      margin-bottom: 0.25rem;
+    }
+  }
+}

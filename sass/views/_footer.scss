@@ -1,0 +1,43 @@
+footer {
+  display: flex;
+  align-items: center; 
+  height: 3.5em;
+  background-color: $bgFooter;
+
+  .content-grid {
+    display: flex;
+    flex: 1 0 auto;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+  }
+
+  .content-wrapper {
+    display: flex;
+    align-items: center;
+    flex: 1 0 auto;
+
+    .circle {
+      width: 2em;
+      height: 2em;
+      border-radius: 50%;
+      line-height: 2em;
+      text-align: center;
+      color: darkgray;
+      border-color: darkgray;
+      background-color: transparent;
+      border: 1px solid darkgray;
+      margin-right: 0.75rem;
+    }
+  
+    .title {
+      color: darkgray;
+    }
+  }
+
+  .author-ref {
+    font-size: 0.625em;
+    justify-self: flex-end;
+    align-self: flex-end;
+  }
+}

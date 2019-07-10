@@ -1,0 +1,30 @@
+header {
+  display: flex;
+  align-items: center; 
+  height: 3.5em;
+  background-color: $bgHeader;
+
+  .content-grid {
+    display: flex;
+    flex: 1 0 auto;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .circle {
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    line-height: 2em;
+    text-align: center;
+    color: $textAlternate;
+    border-color: $textAlternate;
+    background-color: transparent;
+    border: 1px solid $textAlternate;
+    margin-right: 0.75rem;
+  }
+
+  .title {
+    color: $textAlternate;
+  }
+}

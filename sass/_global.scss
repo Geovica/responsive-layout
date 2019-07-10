@@ -1,0 +1,84 @@
+
+/* Typography */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  line-height: 1.5rem;
+  color: $textPrimary;
+  
+  @include breakpoint-small-up {
+    font-size: 14px;
+  }
+
+  @include breakpoint-medium-up {
+    font-size: 14px;
+  }
+
+  @include breakpoint-large-up {
+    font-size: 16px;
+  }
+}
+
+/* Content Grid */
+
+.content-grid {
+  margin: 0 auto;
+  max-width: calc(100% - 2rem);
+
+  @include breakpoint-small-up {
+    max-width: calc(100% - 2rem);
+  }
+
+  @include breakpoint-medium-up {
+    max-width: calc(100% - 4rem);
+  }
+
+  @include breakpoint-large-up {
+    max-width: calc(100% - 8rem);
+  }
+
+  @include breakpoint-xlarge-up {
+    max-width: calc(100% - 18rem);
+  }
+
+  @include breakpoint-xxlarge-up {
+    max-width: calc(100% - 30rem);
+  }
+}
+
+/* Everything else */
+
+body {
+  background-color: $bgPrimary;
+}
+
+a {
+  text-decoration: none;
+}
+
+input[type=button] {
+  background: $colorPrimary;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  border-width: 0;
+  box-shadow: 0 4px 9px rgba(0, 0, 0, 0.15);
+  color: $textAlternate;
+  font-size: 0.75em;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  text-shadow: none;
+  text-align: center;
+  padding: 1rem 1.5rem;
+  min-width: 3.5em;
+}
+
+select {
+  border: 1px solid lightgrey;
+  height: 2.25em;
+  background: none;
+  font-size: 0.875em;
+}
